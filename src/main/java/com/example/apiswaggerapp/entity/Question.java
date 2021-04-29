@@ -1,4 +1,4 @@
-package com.example.apiswaggerapp;
+package com.example.apiswaggerapp.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

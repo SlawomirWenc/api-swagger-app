@@ -3,6 +3,7 @@ package com.example.apiswaggerapp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
@@ -18,9 +19,10 @@ public class ApiSwaggerAppApplication {
 	}
 
 	@Bean
-	public Docket get(){
+	public Docket config(){
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.build().apiInfo(new ApiInfo("Swagger app", "Swagger example application", "1.0","", "Slawomir", "", ""));
+				.paths(PathSelectors.ant("/api/questions/**"))
+				.build().apiInfo(new ApiInfo("Swagger app", "Swagger example application", "1.0","", "Slawomir Wenc", "", ""));
 	}
 }

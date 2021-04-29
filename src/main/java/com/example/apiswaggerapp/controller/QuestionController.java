@@ -1,8 +1,8 @@
-package com.example.apiswaggerapp;
+package com.example.apiswaggerapp.controller;
 
 
-import com.example.apiswaggerapp.QuestionRepo;
-import com.example.apiswaggerapp.Question;
+import com.example.apiswaggerapp.repository.QuestionRepo;
+import com.example.apiswaggerapp.entity.Question;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 

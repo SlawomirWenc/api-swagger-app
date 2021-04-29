@@ -1,5 +1,7 @@
-package com.example.apiswaggerapp;
+package com.example.apiswaggerapp.api;
 
+import com.example.apiswaggerapp.controller.QuestionController;
+import com.example.apiswaggerapp.entity.Question;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
